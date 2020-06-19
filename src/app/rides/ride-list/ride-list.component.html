@@ -1,1 +1,21 @@
-<app-ride-item></app-ride-item>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Ride</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <a href="#" class="list-group-item clearfix" *ngFor="let ride of rides">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ ride.name }}</h4>
+        <p class="list-group-item-text">{{ ride.driverName }}</p>    
+      </div>
+      <span class="pull-right">
+        <img src="{{ ride.driverImage }}" alt="{{ ride.driverName }}" class="img-responsive" style="max-height: 50px;">
+      </span>
+    </a>
+    <br>
+    <app-ride-item></app-ride-item>
+  </div>
+</div>
