@@ -2,19 +2,13 @@ import { Time } from '@angular/common';
 
 export class Ride {
   public name: string;
-  public startPoint: Location;
-  public endPoint: Location;
-  public pickupDate: Date;
-  public pickupTime: Time; 
-  public driver: string;
+  public driverName: string;
+  public driverImage: string;
 
-  constructor(name: string, startPoint: Location, endPoint: Location, pickupDate: Date, pickupTime: Time, driver: string) {
+  constructor(name: string, driverName: string, driverImage: string) {
     this.name = name;
-    this.startPoint = startPoint;
-    this.endPoint = endPoint;
-    this.pickupDate = pickupDate;
-    this.pickupTime = pickupTime;
-    this.driver = driver;
+    this.driverName = driverName;
+    this.driverImage = driverImage;
   }
 
 }
