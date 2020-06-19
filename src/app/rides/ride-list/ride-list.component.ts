@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ride-list.component.css']
 })
 export class RideListComponent implements OnInit {
+  rides = []
 
   constructor() { }
 
